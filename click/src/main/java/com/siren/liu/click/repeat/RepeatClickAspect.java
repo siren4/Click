@@ -18,7 +18,7 @@ public class RepeatClickAspect {
 
     /**
      * 切面表达式，声明需要过滤的类和方法
-     * 例如：execution中的内容需要替换成@RepeatClick注解的全路径。
+     * execution中的内容需要替换成@RepeatClick注解的全路径。
      */
     @Pointcut("execution(@com.siren.liu.click.repeat.RepeatClick * *(..))")
     public void methodAnnotated() {

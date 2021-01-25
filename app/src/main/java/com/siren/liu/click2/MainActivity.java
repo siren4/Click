@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.bt_repeat).setOnClickListener(new View.OnClickListener() {
-            @RepeatClick(delay = 3000)
+            @RepeatClick(delay = 1000)
             @Override
             public void onClick(View v) {
                 Log.d("siren4", "+++repeatClick+++");
