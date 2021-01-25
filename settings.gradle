@@ -1,0 +1,3 @@
+include ':click'
+include ':app'
+rootProject.name = "Click"
