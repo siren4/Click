@@ -42,11 +42,11 @@ public abstract class MultipleClickListener implements View.OnClickListener {
         mainHandler.sendMessageDelayed(msg, doubleMark() + 1);
     }
 
-    protected int doubleMark() {
+    public int doubleMark() {
         return DOUBLE_CLICK_DELAY_TIME;
     }
 
-    protected abstract void onSingleClick(View view);
+    public abstract void onSingleClick(View view);
 
-    protected abstract void onDoubleClick(View view);
+    public abstract void onDoubleClick(View view);
 }

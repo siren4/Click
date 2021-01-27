@@ -10,16 +10,14 @@ android {
         targetSdkVersion 30
         versionCode 100
         versionName "1.0.0"
-        consumerProguardFiles "consumer-rules.pro"
+        consumerProguardFiles 'proguard-rules.pro'
     }
 
     buildTypes {
         release {
-            minifyEnabled true
-            zipAlignEnabled true
-
+            minifyEnabled false
+            zipAlignEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            proguardFiles(*fileTree(dir: "proguard", include: ['*.pro', '*.txt']).collect())
         }
     }
     compileOptions {

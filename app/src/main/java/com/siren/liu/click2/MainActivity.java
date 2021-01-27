@@ -26,17 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.bt_multiple).setOnClickListener(new MultipleClickListener() {
             @Override
-            protected void onSingleClick(View view) {
+            public void onSingleClick(View view) {
                 Log.d("siren4", "+++onSingleClick+++");
             }
 
             @Override
-            protected void onDoubleClick(View view) {
+            public void onDoubleClick(View view) {
                 Log.d("siren4", "+++onDoubleClick+++");
             }
 
             @Override
-            protected int doubleMark() {
+            public int doubleMark() {
                 return 300;
             }
         });
