@@ -20,3 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 -keep class com.siren.liu.click.**{*;}
+-keepclasseswithmembers class *{
+   @com.siren.liu.click.repeat.RepeatClick <methods>;
+}
