@@ -19,7 +19,7 @@
   apply plugin: 'android-aspectjx'
   
   dependencies {
-       implementation 'com.github.siren4:Click:1.0.0'
+       implementation 'com.github.siren4:Click:2.0.0'
   }
   ```
 ## 文档
